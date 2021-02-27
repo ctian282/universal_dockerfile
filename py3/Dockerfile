@@ -17,7 +17,7 @@ RUN	apt-get update \
 		wget \
                 #lpcola env
                 libopenmpi-dev\
-
+                libgsl-dev\
                 #python essential
                 python3\
                 python3-pip
