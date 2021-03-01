@@ -39,5 +39,6 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-${CONDA_VERSION}
     find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
     /opt/conda/bin/conda clean -afy
 
-pip install healpy
-conda install -c bccp nbodykit
+
+RUN pip install healpy
+RUN conda install -c bccp nbodykit
