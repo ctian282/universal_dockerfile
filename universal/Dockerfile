@@ -2,7 +2,7 @@
 
 
 FROM ubuntu:20.04
-ENV DEBIAN_FRONTEND=noninteractive 
+ENV DEBIAN_FRONTEND=noninteractive
 
 
 # Install a bunch of build shit.
@@ -21,10 +21,10 @@ RUN	apt-get update \
                 libfftw3-mpi-dev\
                 libfftw3-dev\
                 libgsl-dev\
-
-                #python essential
-                python3\
-                python3-pip
+    libhdf5-dev\
+    #python essential
+    python3\
+    python3-pip
 
 
 
@@ -33,7 +33,3 @@ RUN pip3 install healpy
 RUN pip3 install cython
 RUN pip3 install mpi4py
 RUN pip3 install nbodykit
-
-                
-
-
