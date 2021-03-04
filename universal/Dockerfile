@@ -22,12 +22,13 @@ RUN	apt-get update \
                 libfftw3-dev\
                 libgsl-dev\
                 libhdf5-dev\
-		libboost-all-dev\
+                libboost-all-dev\
                 #python essential
                 python3\
-                python3-pip
-
-
+                python3-pip\
+		# some basic shell commands...
+                bc\
+                sed
 
 # pip install python packages
 RUN pip3 install healpy
