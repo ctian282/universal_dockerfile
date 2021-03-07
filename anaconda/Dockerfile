@@ -42,3 +42,4 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-${CONDA_VERSION}
 
 RUN pip install healpy
 RUN conda install -c bccp nbodykit
+RUN pip install jupyter
