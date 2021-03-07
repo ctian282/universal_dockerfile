@@ -5,7 +5,7 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 
-# Install a bunch of build shit.
+# Install a bunch of build tools.
 RUN	apt-get update \
 	&& apt-get install -y \
 		build-essential \
@@ -21,12 +21,14 @@ RUN	apt-get update \
                 libfftw3-mpi-dev\
                 libfftw3-dev\
                 libgsl-dev\
-    libhdf5-dev\
-    #python essential
-    python3\
-    python3-pip
-
-
+                libhdf5-dev\
+                libboost-all-dev\
+                #python essential
+                python3\
+                python3-pip\
+		# some basic shell commands...
+                bc\
+                sed
 
 # pip install python packages
 RUN pip3 install healpy
