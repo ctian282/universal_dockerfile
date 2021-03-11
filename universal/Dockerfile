@@ -37,3 +37,4 @@ RUN pip3 install cython
 RUN pip3 install mpi4py
 RUN pip3 install nbodykit
 RUN pip3 install "dask[array]"
+RUN pip3 install dill
