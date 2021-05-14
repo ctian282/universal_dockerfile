@@ -2,7 +2,7 @@
 
 
 FROM ubuntu:18.04
-ENV DEBIAN_FRONTEND=noninteractive 
+ENV DEBIAN_FRONTEND=noninteractive
 
 
 # Install a bunch of build shit.
@@ -15,13 +15,12 @@ RUN	apt-get update \
 		unzip \
 		emacs \
 		wget \
-                #lpcola env
-                libopenmpi-dev\
-                libhealpix-cxx-dev\
-                libfftw3-mpi-dev\
-                libfftw3-dev\
-                libgsl-dev\
-
-                
-
-
+    #lpcola env
+    libopenmpi-dev\
+    libhealpix-cxx-dev\
+    libfftw3-mpi-dev\
+    libfftw3-dev\
+    libgsl-dev\
+#DTFE
+    libboost1.65-all-dev\
+    libcgal-dev\
